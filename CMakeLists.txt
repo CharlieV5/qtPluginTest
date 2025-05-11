@@ -1,6 +1,6 @@
 # CMakeLists.txt
 cmake_minimum_required(VERSION 3.10)
-project(CTKPluginExample)
+project(qtPluginExample)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -25,7 +25,6 @@ foreach(config IN ITEMS Debug Release RelWithDebInfo MinSizeRel)
     set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_${config_upper} ${LIB_OUTPUT_DIR}/${config})
 endforeach()
 
-include_directories(${CTK_INCLUDE_DIRS})
 include_directories(${Qt5_INCLUDE_DIRS})
 
 # set(CMAKE_DEBUG_POSTFIX "_d")

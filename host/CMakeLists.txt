@@ -19,5 +19,3 @@ target_include_directories(qt_plugin_host
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${CMAKE_CURRENT_SOURCE_DIR}/../interfaces # 包含接口头文件
 )
-
-set_target_properties(qt_plugin_host PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${BINARY_OUTPUT_DIR})
